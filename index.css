@@ -1,0 +1,152 @@
+/* General Body Styling */
+body {
+    background-color: #000001;
+    opacity: 0;
+    animation: fadein 1.5s ease-in-out forwards;
+    visibility: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Fade-in animation */
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* Navbar Styling */
+.navbar ul {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    list-style-type: none;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.navbar a {
+    display: flex;
+    text-decoration: none;
+    font-size: larger;
+    padding: 5px 20px;
+    margin: 5px 20px;
+    text-align: center;
+    justify-content: center;
+    color: bisque;
+    background-color: transparent;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.5s ease;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover {
+    color: aqua;
+}
+
+.navbar a:hover::after {
+    width: 60%;
+}
+
+.navbar {
+    background-color: #1f1f1f;
+}
+
+/* Image Styling */
+img {
+    border-radius: 50%;
+    padding: auto;
+    height: 2in;
+    margin: auto;
+    display: block;
+}
+
+/* Section Styling */
+#bio h2, #para h1, #project h3, #Hobbies h1, #skill h1, #contact h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Paragraphs in sections */
+#para p, #project p, #Hobbies p, #skill li, #contact p, #contact li {
+    color: white;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Lists in sections */
+#skill ol, #contact ol {
+    list-style-position: inside;
+    align-items: center;
+    text-decoration: none;
+}
+
+#contact a {
+    text-decoration: underline;
+    color: red;
+}
+
+/* Copyright Section */
+.copyright p {
+    color: white;
+    text-align: center;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    img {
+        height: 150px; /* Adjust image size for smaller screens */
+    }
+
+    #para p, #project p, #Hobbies p, #skill li, #contact p, #contact li {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar ul {
+        padding: 10px;
+    }
+
+    .navbar a {
+        padding: 8px 15px;
+    }
+
+    img {
+        height: 120px;
+    }
+
+    #para p, #project p, #Hobbies p, #skill li, #contact p, #contact li {
+        font-size: 18px;
+    }
+}
