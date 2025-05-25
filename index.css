@@ -80,12 +80,16 @@ img {
 }
 
 /* Section Styling */
-#bio h2, #para h1, #project h1, #Hobbies h1, #skill h1, #contact h1 {
+#bio h2, #para h1, #Hobbies h1, #skill h1, #contact h1 {
     color: white;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+#project{
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 /* Paragraphs in sections */
 #para p, #project p, #Hobbies p, #skill li, #contact p, #contact li {
     color: white;
