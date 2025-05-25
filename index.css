@@ -80,7 +80,7 @@ img {
 }
 
 /* Section Styling */
-#bio h2, #para h1, #project h3, #Hobbies h1, #skill h1, #contact h1 {
+#bio h2, #para h1, #project h1, #Hobbies h1, #skill h1, #contact h1 {
     color: white;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
