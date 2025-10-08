@@ -21,8 +21,8 @@ body {
 
 .navbar ul {
     display: flex;
-    padding: 20px;
-    margin: 20px;
+    padding: 25px;
+    margin: 10px;
     list-style-type: none;
     justify-content: center;
     overflow: hidden;
