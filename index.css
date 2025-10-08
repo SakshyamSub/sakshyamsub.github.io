@@ -1,6 +1,6 @@
 /* General Body Styling */
 body {
-    background-color: #000001;
+    background-color: #3C4142   ;
     opacity: 0;
     animation: fadein 1.5s ease-in-out forwards;
     visibility: hidden;
@@ -19,7 +19,6 @@ body {
     }
 }
 
-/* Navbar Styling */
 .navbar ul {
     display: flex;
     padding: 20px;
@@ -67,20 +66,29 @@ body {
 }
 
 .navbar {
-    background-color: #1f1f1f;
+    background-color: #2C2F30;
 }
 
 /* Image Styling */
 img {
-    border-radius: 50%;
-    padding: auto;
-    height: 2in;
-    margin: auto;
+    border-radius: 20%;
+    height: 3in;
     display: block;
+    margin: auto;
+    transition: transform 0.5s ease;
 }
 
-/* Section Styling */
-#bio h2, #para h1, #Hobbies h1, #skill h1, #contact h1 {
+img:hover {
+    transform: scale(1.1); 
+
+}
+.bio h2{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ #para h1, #Hobbies h1, #skill h1, #contact h1 {
     color: white;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
