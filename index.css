@@ -82,6 +82,7 @@ img {
     margin-top: auto;
     justify-content: left;
     align-items: left ;
+    align-content: left;
     border-radius: 5%;
     height: 2in;
     margin: auto;
