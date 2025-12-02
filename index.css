@@ -176,3 +176,27 @@ body {
         font-size: 18px;
     }
 }
+/* Fade-in for scroll */
+.scroll-fade {
+    opacity: 0;                  /* start invisible */
+    transform: translateY(20px); /* slight move up */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Initial state: hidden */
+.img, .bio, #para, #project, #Hobbies, #skill, #contact {
+    opacity: 0;
+    transform: translateY(30px);   /* slightly bigger movement */
+    transition: opacity 2s ease-out, transform 2s ease-out; /* slower fade */
+}
+
+/* Visible state: fades in */
+.img.visible, .bio.visible, #para.visible, #project.visible, #Hobbies.visible, #skill.visible, #contact.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
