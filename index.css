@@ -1,5 +1,12 @@
 body {
-    background-color: #3C4142   ;
+    background: linear-gradient(
+        to bottom,
+        #1a001f 0%,     /* light purple at top */
+        #000000 30%,    /* black */
+        #1a001f 60%,    /* light purple in the middle */
+        #000000 80%,    /* black */
+        #24002e 100%    /* light purple at bottom */
+    );
     opacity: 0;
     animation: fadein 1.5s ease-in-out forwards;
     visibility: hidden;
@@ -31,12 +38,12 @@ body {
 .navbar a {
     display: flex;
     text-decoration: none;
-    font-size: larger;
-    padding: 5px 20px;
-    margin: 5px 20px;
+    font-size: 21px;
+    padding: 10px 20px;
+    margin: 1px 20px;
     text-align: center;
     justify-content: center;
-    color: bisque;
+    color: white;
     background-color: transparent;
     position: relative;
     transition: background-color 0.3s ease, color 0.5s ease;
@@ -57,7 +64,7 @@ body {
 }
 
 .navbar a:hover {
-    color: aqua;
+    color: gold;
 }
 
 .navbar a:hover::after {
@@ -65,14 +72,18 @@ body {
 }
 
 .navbar {
-    background-color: #2C2F30;
+    background: transparent;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
 }
+  
 
-/* Image Styling */
 img {
-    border-radius: 10%;
-    height: 4in;
     display: block;
+    margin-top: auto;
+    justify-content: left;
+    align-items: left ;
+    border-radius: 5%;
+    height: 2in;
     margin: auto;
     transition: transform 0.2s ease;
 }
@@ -90,23 +101,22 @@ img:hover {
  #para h1, #Hobbies h1, #skill h1, #contact h1 {
     color: white;
     text-align: center;
-    font-family: 'Bernand MT',sans-serif;
+    font-family: 'Times New Roman',sans-serif;
 }
 #project{
     color: white;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman' sans-serif;
 }
-/* Paragraphs in sections */
+
 #para p, #project p, #Hobbies p, #skill li, #contact p, #contact li {
     color: white;
     font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Cinzel', sans-serif;
     padding: 10px;
     text-align: center;
 }
 
-/* Lists in sections */
 #skill ol, #contact ol {
     list-style-position: inside;
     align-items: center;
@@ -118,7 +128,7 @@ img:hover {
     color: red;
 }
 
-/* Copyright Section */
+
 .copyright p {
     color: white;
     text-align: center;
