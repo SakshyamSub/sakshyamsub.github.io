@@ -1,11 +1,11 @@
 body {
     background: linear-gradient(
         to bottom,
-        #1a001f 0%,     /* light purple at top */
-        #000000 30%,    /* black */
-        #1a001f 60%,    /* light purple in the middle */
-        #000000 80%,    /* black */
-        #24002e 100%    /* light purple at bottom */
+        #1a001f 0%,     
+        #000000 30%,
+        #1a001f 60%,    
+        #000000 80%,    
+        #24002e 100%    
     );
     opacity: 0;
     animation: fadein 1.5s ease-in-out forwards;
@@ -77,29 +77,33 @@ body {
 }
   
 
-img {
-    display: block;
-    margin-top: auto;
+.img{
+    display: flex;
+    margin-top: 5%;
     justify-content: left;
     align-items: left ;
-    align-content: left;
-    border-radius: 5%;
-    height: 2in;
-    margin: auto;
-    transition: transform 0.2s ease;
+    height: 2.8in;
+    margin-left: 10%;
+    transition: transform 1.5s ease;
 }
 
-img:hover {
-    transform: scale(1.1); 
 
+.img:hover{
+    transform: scale(1.1); 
 }
 .bio h2{
     color: white;
-    font-size: 30px;
+    position: relative;
+    gap: 20px;
+    font-size: 7vh;
+    display: flex;
+    justify-content: center;
+    top: -180px;
     text-align: center;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Cinzel', sans-serif;
+    margin-left: 100px;
 }
- #para h1, #Hobbies h1, #skill h1, #contact h1 {
+ #para h1, #Hobbies h1, #skill h1, #contact h1{
     color: white;
     text-align: center;
     font-family: 'Times New Roman',sans-serif;
@@ -112,7 +116,7 @@ img:hover {
 
 #para p, #project p, #Hobbies p, #skill li, #contact p, #contact li {
     color: white;
-    font-size: 25px;
+    font-size: 28px;
     font-family: 'Cinzel', sans-serif;
     padding: 10px;
     text-align: center;
