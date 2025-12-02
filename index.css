@@ -71,11 +71,11 @@ body {
 
 /* Image Styling */
 img {
-    border-radius: 20%;
-    height: 3in;
+    border-radius: 10%;
+    height: 4in;
     display: block;
     margin: auto;
-    transition: transform 0.5s ease;
+    transition: transform 0.2s ease;
 }
 
 img:hover {
@@ -86,12 +86,12 @@ img:hover {
     color: white;
     font-size: 30px;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Bernand MT', sans-serif;
 }
  #para h1, #Hobbies h1, #skill h1, #contact h1 {
     color: white;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Bernand MT',sans-serif;
 }
 #project{
     color: white;
